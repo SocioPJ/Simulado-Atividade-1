@@ -1,17 +1,25 @@
 public class Usuarios{
+   
     //Atributos da classe:
     private String nome;
     private String senha;
     private String email;
-
-    //Construtor:
+    private Conta conta;
+    }
+    //Construtor da classe:
     public Usuarios(String nome, String senha, String email){
         this.nome = nome;
         this.senha = senha;
         this.email = email;
+        this.conta = new Conta(valor);
     }
-   
-
+//Crie métodos para a classe Usuarios:
+//-visualizarUsuario()
+public void visualizarUsuario(){
+    System.out.println("Nome: " + nome);
+    System.out.println("Senha: " + senha);
+    System.out.println("Email: " + email);
+}
     //Métodos da classe:
     public void visualizarUsuario(){
         System.out.println("Nome:" + nome);
